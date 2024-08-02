@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.dinesh.android.ui.theme.M3ThemeTheme
+import com.dinesh.m3theme.ColorScheme.dynamicColorScheme
 import com.dinesh.m3theme.SharedLib
 
 class MainActivity: ComponentActivity() {
@@ -31,7 +32,7 @@ class MainActivity: ComponentActivity() {
             }
 
             MaterialTheme(
-                colorScheme = Testing().dynamicColorScheme(
+                colorScheme = dynamicColorScheme(
                     keyColor = Color(0xFF007FAC),
                     isDark = isSystemInDarkTheme()
                 )
